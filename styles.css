@@ -69,9 +69,9 @@ body {
     gap: 1rem;
     text-align: center;
     background-color: hsl(0, 0%, 12%);
-    max-width: 300px;
+    max-width: 350px;
     color: hsl(0, 0%, 100%);
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 2rem;
     border-radius: 10px;
 }
 
@@ -128,4 +128,16 @@ li:hover, li:focus {
 
 li:hover a, li:focus a {
     color: hsl(0, 0%, 20%);
+}
+
+li, li a {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+@media (max-width: 400px) {
+    .card {
+        width: 90%;
+    }
 }
